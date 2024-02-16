@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ocr App policy',
+      title: 'OCR Camera App Policy',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -54,17 +54,22 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     double w = MediaQuery.of(context).size.width;
+    double h = MediaQuery.of(context).size.height;
     return Scaffold(
+      backgroundColor: const Color(0xFFF1F1F1),
       appBar: AppBar(
+        // toolbarHeight: h * 0.1,
+        backgroundColor: const Color(0xFF779ECB),
         leading: SizedBox(
           width: w * 0.05,
         ),
         elevation: 0.0,
-        title: Text(
-          "OCR Camera",
+        title: const Text(
+          "OCR Camera App Policy",
           style: TextStyle(
-            fontSize: 32.0,
+            fontSize: 24.0,
             fontWeight: FontWeight.bold,
+            // color: Colors.black,
           ),
         ),
       ),
@@ -72,118 +77,120 @@ class _MyHomePageState extends State<MyHomePage> {
         // padding: EdgeInsets.symmetric(horizontal: 200.0, vertical: 80.0),
         child: SingleChildScrollView(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: w * 0.05, vertical: 60.0),
+            padding:
+                EdgeInsets.symmetric(horizontal: w * 0.05, vertical: h * 0.03),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text(
                   "Privacy Policy",
                   style: TextStyle(
-                    fontSize: 36.0,
+                    fontSize: 24.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 32.0),
+                SizedBox(height: 28.0),
                 Text(
                   "I. Overview",
-                  style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 16.0),
                 Text(
-                  "This privacy policy outlines how we collect, use, and protect your personal information when using our OCR (Optical Character Recognition) app. We are committed to protecting the privacy and security of your personal information.",
-                  style: TextStyle(fontSize: 20.0),
+                  "Welcome to our OCR (Optical Character Recognition) app's Privacy Policy. This document details how we gather, utilize, and safeguard your personal information as you engage with our OCR application. Our commitment is to prioritize the protection of your privacy and the security of your personal data.",
+                  style: TextStyle(fontSize: 16.0),
                 ),
                 SizedBox(height: 32.0),
                 Text(
                   "II. Information Collection",
                   style: TextStyle(
-                    fontSize: 32.0,
+                    fontSize: 24.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 16.0),
                 Text(
                   "1. Camera Access Permission",
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "\nTo perform the OCR function, the app requests access to the camera to capture text images. This permission is required to provide the best user experience.",
-                  style: TextStyle(fontSize: 20.0),
+                  "\nIn order to carry out the OCR functionality effectively, our application requests access to your device's camera to capture images of text. This permission is essential to ensure an optimal user experience.",
+                  style: TextStyle(fontSize: 16.0),
                 ),
                 SizedBox(height: 16.0),
                 Text(
                   "2. Use of Images and OCR Data",
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "\nImages captured from the camera will be used to perform OCR and extract information from the text. We commit not to store images or OCR data after they have been successfully processed.",
-                  style: TextStyle(fontSize: 20.0),
+                  "\nThe images obtained from your device's camera are employed to execute the OCR function, extracting information from text. It's important to note that we pledge not to retain these images or any OCR data after they have been successfully processed.",
+                  style: TextStyle(fontSize: 16.0),
                 ),
                 SizedBox(height: 32.0),
                 Text(
                   "III. Information Security",
                   style: TextStyle(
-                    fontSize: 32.0,
+                    fontSize: 24.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 16.0),
                 Text(
                   "1. Secure Storage",
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "\nWe employ robust security measures to protect your personal information from loss, unauthorized use, access, disclosure, or alteration. Data will be stored on high-security servers and accessed only by authorized personnel.",
-                  style: TextStyle(fontSize: 20.0),
+                  "\nWe implement robust security measures to safeguard your personal information from potential loss, unauthorized access, usage, disclosure, or alteration. All data is stored on highly secure servers, accessible only by authorized personnel.",
+                  style: TextStyle(fontSize: 16.0),
                 ),
                 SizedBox(height: 16.0),
                 Text(
                   "2. No User Tracking",
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "\nWe do not track users and do not collect unnecessary personal information. Any data collected is used solely for providing the OCR service and is not shared with third parties.",
-                  style: TextStyle(fontSize: 20.0),
+                  "\nTo respect your privacy, our app does not engage in user tracking, and we refrain from collecting unnecessary personal information. Any data collected is solely used to provide the OCR service and is not shared with any third parties.",
+                  style: TextStyle(fontSize: 16.0),
                 ),
-                SizedBox(height: 32.0),
+                SizedBox(height: 24.0),
                 Text(
                   "IV. User Rights and Control",
                   style: TextStyle(
-                    fontSize: 32.0,
+                    fontSize: 24.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 16.0),
                 Text(
                   "1. User Rights",
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "\nUsers have the right to control their personal information and can opt-out of camera access permissions in the app settings. This may impact the ability to use the OCR function.",
-                  style: TextStyle(fontSize: 20.0),
+                  "\nUsers maintain the right to control their personal information. You can opt-out of camera access permissions within the app settings. However, it's important to note that the primary function of the app is to capture images and convert them into text. This will result in the app not functioning as intended if camera access is denied.",
+                  style: TextStyle(fontSize: 16.0),
                 ),
                 SizedBox(height: 16.0),
                 Text(
                   "2. Contact and Notifications",
-                  style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "\nIf you have any questions or concerns regarding our privacy policy, you can contact us through the following information:\n\n- Email: privacy@example.com",
-                  style: TextStyle(fontSize: 20.0),
+                  "\nIf you have questions or concerns about our privacy policy, we encourage you to reach out to us via the following contact information:\n\n- Email: minh@machinax.net",
+                  style: TextStyle(fontSize: 16.0),
                 ),
                 SizedBox(height: 32.0),
                 Text(
                   "V. Policy Updates",
                   style: TextStyle(
-                    fontSize: 32.0,
+                    fontSize: 24.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 SizedBox(height: 16.0),
                 Text(
-                  "We may update this privacy policy from time to time to reflect changes in how we collect, use, and protect personal information. Changes will be clearly communicated within the app or on our website.\n\nThis policy was last updated on February 16, 2024.",
-                  style: TextStyle(fontSize: 20.0),
+                  "This privacy policy may undergo periodic updates to reflect changes in our approach to data collection, usage, and protection. Any modifications will be clearly communicated within the app or on our official website.\n\nThis policy was last updated on February 16, 2024. Thank you for entrusting us with your privacy and choosing our OCR app.",
+                  style: TextStyle(fontSize: 16.0),
                 ),
+                SizedBox(height: 32.0),
               ],
             ),
           ),
