@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'OCR Camera App Policy',
+      title: 'DEFENDER OCR App Policy',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -59,13 +59,13 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: const Color(0xFFF1F1F1),
       appBar: AppBar(
         // toolbarHeight: h * 0.1,
-        backgroundColor: const Color(0xFF779ECB),
+        backgroundColor: const Color(0xFF968a7b),
         leading: SizedBox(
           width: w * 0.05,
         ),
         elevation: 0.0,
         title: const Text(
-          "OCR Camera App Policy",
+          "DEFENDER OCR App Policy",
           style: TextStyle(
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
